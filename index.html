@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamWork</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Quité la barra inicial para evitar problemas de rutas locales -->
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
-<body>
-    
-
-    <script src="/js/script.js"></script>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Nuestra Galería</h1>
+        <h3 class="text-center mb-4">Fran estubo aquí xd</h3>
+        <!-- Este es el contenedor donde el JS inyectará las imágenes -->
+        <div class="pinterest-gallery" id="gallery"></div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

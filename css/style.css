@@ -1,0 +1,34 @@
+/* Contenedor principal estilo Pinterest */
+.pinterest-gallery {
+    column-count: 1; /* Por defecto 1 columna para celulares */
+    column-gap: 15px; /* Espacio entre columnas */
+}
+
+/* Imágenes dentro de la galería */
+.pinterest-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Bordes redondeados tipo Pinterest */
+    margin-bottom: 15px; /* Espacio debajo de cada imagen */
+    display: block;
+    transition: transform 0.3s ease; /* Efecto suave de transición */
+}
+
+/* Efecto hover al pasar el ratón */
+.pinterest-gallery img:hover {
+    transform: scale(1.02); /* Zoom ligero */
+    cursor: pointer;
+}
+
+/* Diseño responsivo usando Media Queries */
+@media (min-width: 576px) {
+    .pinterest-gallery { column-count: 2; } /* 2 columnas en tablets */
+}
+
+@media (min-width: 768px) {
+    .pinterest-gallery { column-count: 3; } /* 3 columnas en laptops */
+}
+
+@media (min-width: 992px) {
+    .pinterest-gallery { column-count: 4; } /* 4 columnas en pantallas grandes */
+}
